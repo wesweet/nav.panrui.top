@@ -2,7 +2,7 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-05-06 17:13:18
+ * @LastEditTime: 2024-05-06 17:23:54
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
@@ -22,6 +22,45 @@
         </el-menu-item>
         <el-menu-item index="2">
           <span slot="title">前端常用</span>
+        </el-menu-item>
+        <el-menu-item index="3">
+          <span slot="title">UI框架</span>
+        </el-menu-item>
+        <el-menu-item index="4">
+          <span slot="title">CSS相关</span>
+        </el-menu-item>
+        <el-menu-item index="5">
+          <span slot="title">JavaScript</span>
+        </el-menu-item>
+        <el-menu-item index="6">
+          <span slot="title">Vue生态</span>
+        </el-menu-item>
+        <el-menu-item index="7">
+          <span slot="title">React生态</span>
+        </el-menu-item>
+        <el-menu-item index="8">
+          <span slot="title">Node相关</span>
+        </el-menu-item>
+        <el-menu-item index="9">
+          <span slot="title">小程序相关</span>
+        </el-menu-item>
+        <el-menu-item index="10">
+          <span slot="title">编译构建打包</span>
+        </el-menu-item>
+        <el-menu-item index="11">
+          <span slot="title">框架类库</span>
+        </el-menu-item>
+        <el-menu-item index="12">
+          <span slot="title">图标库</span>
+        </el-menu-item>
+        <el-menu-item index="13">
+          <span slot="title">平台社区</span>
+        </el-menu-item>
+        <el-menu-item index="14">
+          <span slot="title">Web数据可视化</span>
+        </el-menu-item>
+        <el-menu-item index="15">
+          <span slot="title">大佬社区</span>
         </el-menu-item>
       </el-menu>
     </el-aside>
