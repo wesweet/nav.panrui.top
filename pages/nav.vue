@@ -2,7 +2,7 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-05-07 11:36:48
+ * @LastEditTime: 2024-05-07 16:37:08
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
@@ -529,7 +529,9 @@
                 <span>
                   <strong>IPV6测试</strong>
                 </span>
-                <p class="overflowClip_2">致力于普及 IPv6 ,推进 IPv6 规模部署和应用</p>
+                <p class="overflowClip_2">
+                  致力于普及 IPv6 ,推进 IPv6 规模部署和应用
+                </p>
               </div>
             </div>
           </div></el-col
@@ -543,7 +545,11 @@
           :md="10"
           :lg="6"
           :xl="6"
-          @click="openWindow('https://www.gov.cn/xinwen/2020-06/01/content_5516649.htm')"
+          @click="
+            openWindow(
+              'https://www.gov.cn/xinwen/2020-06/01/content_5516649.htm'
+            )
+          "
           ><div class="grid-content bg-purple-dark">
             <div class="content">
               <a></a>
@@ -581,7 +587,11 @@
           :md="10"
           :lg="6"
           :xl="6"
-          @click="openWindow('https://www.stats.gov.cn/sj/zxfb/202401/t20240117_1946624.html')"
+          @click="
+            openWindow(
+              'https://www.stats.gov.cn/sj/zxfb/202401/t20240117_1946624.html'
+            )
+          "
           ><div class="grid-content bg-purple-dark">
             <div class="content">
               <a></a>
@@ -589,7 +599,9 @@
                 <span>
                   <strong>2023年国民经济报告</strong>
                 </span>
-                <p class="overflowClip_2">2023年国民经济回升向好 高质量发展扎实推进</p>
+                <p class="overflowClip_2">
+                  2023年国民经济回升向好 高质量发展扎实推进
+                </p>
               </div>
             </div>
           </div></el-col
@@ -600,7 +612,11 @@
           :md="10"
           :lg="6"
           :xl="6"
-          @click="openWindow('https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901709.html')"
+          @click="
+            openWindow(
+              'https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901709.html'
+            )
+          "
           ><div class="grid-content bg-purple-dark">
             <div class="content">
               <a></a>
@@ -619,7 +635,11 @@
           :md="10"
           :lg="6"
           :xl="6"
-          @click="openWindow('https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901336.html')"
+          @click="
+            openWindow(
+              'https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901336.html'
+            )
+          "
           ><div class="grid-content bg-purple-dark">
             <div class="content">
               <a></a>
@@ -627,7 +647,9 @@
                 <span>
                   <strong>2021年国民经济报告</strong>
                 </span>
-                <p class="overflowClip_2">2021年国民经济持续恢复 发展预期目标较好完成</p>
+                <p class="overflowClip_2">
+                  2021年国民经济持续恢复 发展预期目标较好完成
+                </p>
               </div>
             </div>
           </div></el-col
@@ -729,6 +751,108 @@
                   <strong>今日热榜</strong>
                 </span>
                 <p class="overflowClip_2">吃瓜摸鱼榜单</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="21">基金炒股</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="
+            openWindow(
+              'https://cn.investing.com/rates-bonds/u.s.-10-year-bond-yield'
+            )
+          "
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>美国国债</strong>
+                </span>
+                <p class="overflowClip_2">美国十年期国债收益率</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://dapanyuntu.com/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>大盘云图</strong>
+                </span>
+                <p class="overflowClip_2">大盘涨跌云图</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.cls.cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>财联社</strong>
+                </span>
+                <p class="overflowClip_2">财经新闻</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://xueqiu.com/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>雪球</strong>
+                </span>
+                <p class="overflowClip_2">雪球</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.jiaoyikecha.com/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>交易可查</strong>
+                </span>
+                <p class="overflowClip_2">交易可查</p>
               </div>
             </div>
           </div></el-col
