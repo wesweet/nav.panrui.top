@@ -2,7 +2,7 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-05-07 09:26:16
+ * @LastEditTime: 2024-05-07 11:36:48
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
@@ -64,6 +64,21 @@
         </el-menu-item>
         <el-menu-item index="16">
           <span slot="title">常用工具</span>
+        </el-menu-item>
+        <el-menu-item index="17">
+          <span slot="title">第三方免费API</span>
+        </el-menu-item>
+        <el-menu-item index="18">
+          <span slot="title">政府信息</span>
+        </el-menu-item>
+        <el-menu-item index="19">
+          <span slot="title">VPN机场</span>
+        </el-menu-item>
+        <el-menu-item index="20">
+          <span slot="title">摸鱼吃瓜</span>
+        </el-menu-item>
+        <el-menu-item index="21">
+          <span slot="title">基金炒股</span>
         </el-menu-item>
       </el-menu>
     </el-aside>
@@ -343,6 +358,25 @@
             </div>
           </div></el-col
         >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://nutui.jd.com/#/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>nutui</strong>
+                </span>
+                <p class="overflowClip_2">京东风格的轻量级移动端组件库</p>
+              </div>
+            </div>
+          </div></el-col
+        >
       </el-row>
       <el-tag style="margin-bottom: 20px" id="12">图标库</el-tag>
       <el-row :gutter="20">
@@ -352,7 +386,11 @@
           :md="10"
           :lg="6"
           :xl="6"
-          @click="openWindow('https://www.iconfont.cn/?spm=a313x.home_index.i3.2.b1293a818qSpva')"
+          @click="
+            openWindow(
+              'https://www.iconfont.cn/?spm=a313x.home_index.i3.2.b1293a818qSpva'
+            )
+          "
           ><div class="grid-content bg-purple-dark">
             <div class="content">
               <a></a>
@@ -473,6 +511,224 @@
                   <strong>axios</strong>
                 </span>
                 <p class="overflowClip_2">易用、简洁且高效的http库</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://ipw.cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>IPV6测试</strong>
+                </span>
+                <p class="overflowClip_2">致力于普及 IPv6 ,推进 IPv6 规模部署和应用</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="18">政府信息</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.gov.cn/xinwen/2020-06/01/content_5516649.htm')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>民法典</strong>
+                </span>
+                <p class="overflowClip_2">学法知法懂法</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.mca.gov.cn/n156/n2679/index.html')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>民政数据</strong>
+                </span>
+                <p class="overflowClip_2">民政部统计数据</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.stats.gov.cn/sj/zxfb/202401/t20240117_1946624.html')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>2023年国民经济报告</strong>
+                </span>
+                <p class="overflowClip_2">2023年国民经济回升向好 高质量发展扎实推进</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901709.html')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>2022年国民经济报告</strong>
+                </span>
+                <p class="overflowClip_2">2022年国民经济顶住压力再上新台阶</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901336.html')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>2021年国民经济报告</strong>
+                </span>
+                <p class="overflowClip_2">2021年国民经济持续恢复 发展预期目标较好完成</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.stats.gov.cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>国家统计局</strong>
+                </span>
+                <p class="overflowClip_2">国家统计局官方网站</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="19">VPN机场</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.miaoti.me/#/home')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>萌喵加速器</strong>
+                </span>
+                <p class="overflowClip_2">大陆首选 亚洲区最佳 VPN</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://tshl.work/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>天枢互联</strong>
+                </span>
+                <p class="overflowClip_2">与世界互联</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://pqjc.site/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>赔钱机场</strong>
+                </span>
+                <p class="overflowClip_2">真的是赔钱</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="20">摸鱼吃瓜</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://tophub.today/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>今日热榜</strong>
+                </span>
+                <p class="overflowClip_2">吃瓜摸鱼榜单</p>
               </div>
             </div>
           </div></el-col
