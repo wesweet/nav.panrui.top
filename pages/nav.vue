@@ -2,7 +2,7 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-05-07 16:37:08
+ * @LastEditTime: 2024-05-07 17:50:51
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
@@ -80,6 +80,9 @@
         <el-menu-item index="21">
           <span slot="title">基金炒股</span>
         </el-menu-item>
+        <el-menu-item index="22">
+          <span slot="title">AI工具箱</span>
+        </el-menu-item>
       </el-menu>
     </el-aside>
     <el-main>
@@ -113,7 +116,9 @@
           @click="openWindow('https://panrui.top/')"
           ><div class="grid-content bg-purple-dark">
             <div class="content">
-              <a></a>
+              <div class="img">
+                <img src="https://static.panrui.top/logo/rui.png" />
+              </div>
               <div class="box">
                 <span>
                   <strong>个人博客</strong>
@@ -378,6 +383,50 @@
           </div></el-col
         >
       </el-row>
+      <el-tag style="margin-bottom: 20px" id="6">Vue生态</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://vue-admin.cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>vue管理平台集中地</strong>
+                </span>
+                <p class="overflowClip_2">vue管理平台集中地</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="7">React生态</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://react-admin.cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>react管理平台集中地</strong>
+                </span>
+                <p class="overflowClip_2">react管理平台集中地</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
       <el-tag style="margin-bottom: 20px" id="12">图标库</el-tag>
       <el-row :gutter="20">
         <el-col
@@ -531,6 +580,108 @@
                 </span>
                 <p class="overflowClip_2">
                   致力于普及 IPv6 ,推进 IPv6 规模部署和应用
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.jyshare.com/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>菜鸟工具</strong>
+                </span>
+                <p class="overflowClip_2">菜鸟工具</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('http://www.wiicha.com/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>微查网</strong>
+                </span>
+                <p class="overflowClip_2">最全在线查询工具大全</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="17">第三方免费API</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://api.aa1.cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>夏小柔</strong>
+                </span>
+                <p class="overflowClip_2">分享的API永不收费</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="
+            openWindow('https://cloud.tencent.com/developer/article/2081636')
+          "
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>腾讯云社区</strong>
+                </span>
+                <p class="overflowClip_2">超百个免费api接口</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://apifox.com/apihub')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>apifox</strong>
+                </span>
+                <p class="overflowClip_2">
+                  开放 API 共享平台，发现更多公开 API 项目
                 </p>
               </div>
             </div>
@@ -858,6 +1009,30 @@
           </div></el-col
         >
       </el-row>
+      <el-tag style="margin-bottom: 20px" id="22">AI工具箱</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.aitop100.cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>aitop100</strong>
+                </span>
+                <p class="overflowClip_2">
+                  我们聚合全球500+款AI智能软件，提供最新资讯、热门课程和活动
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
     </el-main>
   </el-container>
 </template>
@@ -892,7 +1067,7 @@ const scrollToSection = (sectionId: string) => {
     }
   }
   .grid-content {
-    height: 100px;
+    height: 90px;
     cursor: pointer;
     border-radius: 4px;
     padding: 15px;
@@ -921,6 +1096,14 @@ const scrollToSection = (sectionId: string) => {
       height: 100%;
       display: flex;
       align-items: center;
+      .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 60px;
+        }
+      }
       .box {
         p {
           margin: 0;
