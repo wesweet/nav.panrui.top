@@ -2,7 +2,7 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-05-06 17:23:54
+ * @LastEditTime: 2024-05-07 08:56:37
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
@@ -62,6 +62,9 @@
         <el-menu-item index="15">
           <span slot="title">大佬社区</span>
         </el-menu-item>
+        <el-menu-item index="16">
+          <span slot="title">常用工具</span>
+        </el-menu-item>
       </el-menu>
     </el-aside>
     <el-main>
@@ -71,7 +74,7 @@
           :xs="8"
           :sm="6"
           :md="4"
-          :lg="3"
+          :lg="6"
           :xl="6"
           @click="openWindow('https://docsify.panrui.top/#/')"
           ><div class="grid-content bg-purple-dark">
@@ -90,7 +93,7 @@
           :xs="8"
           :sm="6"
           :md="4"
-          :lg="3"
+          :lg="6"
           :xl="6"
           @click="openWindow('https://panrui.top/')"
           ><div class="grid-content bg-purple-dark">
@@ -109,7 +112,7 @@
           :xs="8"
           :sm="6"
           :md="4"
-          :lg="3"
+          :lg="6"
           :xl="6"
           @click="openWindow('https://chat.panrui.top/')"
           ><div class="grid-content bg-purple-dark">
@@ -128,7 +131,7 @@
           :xs="8"
           :sm="6"
           :md="4"
-          :lg="3"
+          :lg="6"
           :xl="6"
           @click="openWindow('https://static.panrui.top/')"
           ><div class="grid-content bg-purple-dark">
@@ -147,7 +150,7 @@
           :xs="8"
           :sm="6"
           :md="4"
-          :lg="3"
+          :lg="6"
           :xl="6"
           @click="openWindow('https://only.panrui.top/#/')"
           ><div class="grid-content bg-purple-dark">
@@ -169,7 +172,7 @@
           :xs="8"
           :sm="6"
           :md="4"
-          :lg="3"
+          :lg="6"
           :xl="6"
           @click="openWindow('https://www.bootcdn.cn/')"
           ><div class="grid-content bg-purple-dark">
@@ -182,6 +185,273 @@
                 <p class="overflowClip_2">
                   稳定、快速、免费的前端开源项目 CDN 加速服务
                 </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://developer.mozilla.org/zh-CN/docs/Web')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>MDN_WEB_DOCS</strong>
+                </span>
+                <p class="overflowClip_2">MDN Web Docs 社区</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="3">UI框架</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://v1.uviewui.com/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>uview</strong>
+                </span>
+                <p class="overflowClip_2">
+                  uView
+                  UI，是uni-app生态最优秀的UI框架，全面的组件和便捷的工具会让您信手拈来，如鱼得水
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.ruoyi.vip/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>若依</strong>
+                </span>
+                <p class="overflowClip_2">基于SpringBoot的权限管理系统</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://hooray.github.io/vue-sku-form/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>电商sku</strong>
+                </span>
+                <p class="overflowClip_2">
+                  基于 Vue & ElementUI 的电商 SKU 表单配置组件
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="
+            openWindow(
+              'https://element.eleme.cn/#/zh-CN/component/installation'
+            )
+          "
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>Vue-Elementui</strong>
+                </span>
+                <p class="overflowClip_2">
+                  Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0
+                  的桌面端组件库
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="
+            openWindow('https://www.itxst.com/vue-draggable/tutorial.html')
+          "
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>Vue拖拽组件</strong>
+                </span>
+                <p class="overflowClip_2">
+                  Vue.Draggable是一款基于Sortable.js实现的vue拖拽插件
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('http://tinymce.ax-z.cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>富文本编辑器</strong>
+                </span>
+                <p class="overflowClip_2">
+                  TinyMCE是一款易用、且功能强大的所见即所得的富文本编辑器
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="12">图标库</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.iconfont.cn/?spm=a313x.home_index.i3.2.b1293a818qSpva')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>iconfont</strong>
+                </span>
+                <p class="overflowClip_2">
+                  阿里妈妈MUX倾力打造的矢量图标管理、交流平台
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="14">Web数据可视化</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://echarts.apache.org/zh/index.html')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>echarts</strong>
+                </span>
+                <p class="overflowClip_2">
+                  一个基于 JavaScript 的开源可视化图表库
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="15">大佬社区</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://nav.fe32.top/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>网址收藏</strong>
+                </span>
+                <p class="overflowClip_2">大佬唐志远收藏的网址</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="16">常用工具</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://dayjs.fenxianglu.cn/category/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>Day.js中文网</strong>
+                </span>
+                <p class="overflowClip_2">
+                  Day.js是一个极简的JavaScript库，可以为现代浏览器解析、验证、操作和显示日期和时间
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="8"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('http://www.axios-js.com/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>axios</strong>
+                </span>
+                <p class="overflowClip_2">易用、简洁且高效的http库</p>
               </div>
             </div>
           </div></el-col
@@ -213,6 +483,8 @@ const scrollToSection = (sectionId: string) => {
 .container {
   background-color: #f9f9f9;
   min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
   .el-menu-demo {
     border-bottom: none;
     .el-menu-item {
@@ -252,6 +524,7 @@ const scrollToSection = (sectionId: string) => {
         p {
           margin: 0;
           margin-right: 15px;
+          font-size: 14px;
           color: #979898;
         }
       }
