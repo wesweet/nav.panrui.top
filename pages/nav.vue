@@ -2,14 +2,24 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-05-07 17:50:51
+ * @LastEditTime: 2024-05-08 13:50:27
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
 <template>
   <el-container class="container">
     <el-aside width="280px" style="background-color: #2c2e2f">
+      <header class="logo-nav">
+        <div class="logo">
+          <img src="https://static.panrui.top/logo/rui.png" alt="logo" />
+          <span>网址收藏</span>
+        </div>
+        <div class="menu" @click="handleMenuClick">
+          <el-button>菜单</el-button>
+        </div>
+      </header>
       <el-menu
+        id="menu"
         default-active="1"
         class="el-menu-demo"
         background-color="#2c2e2f"
@@ -89,7 +99,7 @@
       <el-tag style="margin-bottom: 20px" id="1">个人站点</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -108,7 +118,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -129,7 +139,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -148,7 +158,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -167,7 +177,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -189,7 +199,7 @@
       <el-tag style="margin-bottom: 20px" id="2">前端常用</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -210,7 +220,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -232,7 +242,7 @@
       <el-tag style="margin-bottom: 20px" id="3">UI框架</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -254,7 +264,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -273,7 +283,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -294,7 +304,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -320,7 +330,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -343,7 +353,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -364,7 +374,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="4"
           :lg="6"
@@ -386,7 +396,7 @@
       <el-tag style="margin-bottom: 20px" id="6">Vue生态</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -404,11 +414,32 @@
             </div>
           </div></el-col
         >
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.nuxt.com.cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>nuxt</strong>
+                </span>
+                <p class="overflowClip_2">
+                  Nuxt是一个 开源框架 ，使得Web开发变得直观且强大
+                </p>
+              </div>
+            </div>
+          </div></el-col
+        >
       </el-row>
       <el-tag style="margin-bottom: 20px" id="7">React生态</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -430,7 +461,7 @@
       <el-tag style="margin-bottom: 20px" id="12">图标库</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -455,7 +486,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -479,7 +510,7 @@
       <el-tag style="margin-bottom: 20px" id="14">Web数据可视化</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -503,7 +534,7 @@
       <el-tag style="margin-bottom: 20px" id="15">大佬社区</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -525,7 +556,7 @@
       <el-tag style="margin-bottom: 20px" id="16">常用工具</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -546,7 +577,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -565,7 +596,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -586,7 +617,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -605,7 +636,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -627,7 +658,7 @@
       <el-tag style="margin-bottom: 20px" id="17">第三方免费API</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -646,7 +677,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -667,7 +698,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -691,7 +722,7 @@
       <el-tag style="margin-bottom: 20px" id="18">政府信息</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -714,7 +745,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -733,7 +764,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -758,7 +789,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -781,7 +812,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -806,7 +837,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -828,7 +859,7 @@
       <el-tag style="margin-bottom: 20px" id="19">VPN机场</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -847,7 +878,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -866,7 +897,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -888,7 +919,7 @@
       <el-tag style="margin-bottom: 20px" id="20">摸鱼吃瓜</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -910,7 +941,7 @@
       <el-tag style="margin-bottom: 20px" id="21">基金炒股</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -933,7 +964,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -952,7 +983,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -971,7 +1002,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -990,7 +1021,7 @@
           </div></el-col
         >
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -1012,7 +1043,7 @@
       <el-tag style="margin-bottom: 20px" id="22">AI工具箱</el-tag>
       <el-row :gutter="20">
         <el-col
-          :xs="8"
+          :xs="24"
           :sm="6"
           :md="10"
           :lg="6"
@@ -1053,6 +1084,17 @@ const scrollToSection = (sectionId: string) => {
     element.scrollIntoView({ behavior: "smooth" });
   }
 };
+const handleMenuClick = () => {
+  const menu: HTMLElement | null = document.getElementById("menu");
+  // 判断菜单是否显示
+  if (menu) {
+    if (menu.style.display == "none" || menu.style.display == "") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  }
+};
 </script>
 
 <style lang="less" scoped>
@@ -1061,6 +1103,24 @@ const scrollToSection = (sectionId: string) => {
   min-height: 100vh;
   max-height: 100vh;
   overflow: hidden;
+  .logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      font-size: 20px;
+      img {
+        width: 30px;
+        margin-right: 20px;
+      }
+    }
+  }
   .el-menu-demo {
     border-bottom: none;
     .el-menu-item {
@@ -1113,6 +1173,23 @@ const scrollToSection = (sectionId: string) => {
         }
       }
     }
+  }
+}
+// 媒体查询
+@media screen and (max-width: 768px) {
+  .el-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  .el-aside {
+    width: 100%;
+    .el-menu {
+      display: none;
+    }
+  }
+  .el-main {
+    overflow: visible;
   }
 }
 </style>

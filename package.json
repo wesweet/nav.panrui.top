@@ -17,6 +17,9 @@
   },
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.9",
-    "element-plus": "^2.7.2"
+    "@vant/nuxt": "^1.0.4",
+    "element-plus": "^2.7.2",
+    "nuxt-icon": "^0.6.10",
+    "vant": "^4.9.0"
   }
 }
