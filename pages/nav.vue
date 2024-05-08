@@ -2,7 +2,7 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-05-08 13:50:27
+ * @LastEditTime: 2024-05-08 15:50:46
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
@@ -14,7 +14,7 @@
           <img src="https://static.panrui.top/logo/rui.png" alt="logo" />
           <span>网址收藏</span>
         </div>
-        <div class="menu" @click="handleMenuClick" style="display: none;">
+        <div class="menu" @click="handleMenuClick" style="display: none">
           <el-button>菜单</el-button>
         </div>
       </header>
@@ -392,6 +392,47 @@
             </div>
           </div></el-col
         >
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://wiredjs.com/showcase')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>wiredjs</strong>
+                </span>
+                <p class="overflowClip_2">一款手绘风格组件UI库</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="4">CSS相关</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://less.bootcss.com/#%E6%A6%82%E8%A7%88')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>less</strong>
+                </span>
+                <p class="overflowClip_2">less官方文档</p>
+              </div>
+            </div>
+          </div></el-col
+        >
       </el-row>
       <el-tag style="margin-bottom: 20px" id="6">Vue生态</el-tag>
       <el-row :gutter="20">
@@ -458,6 +499,28 @@
           </div></el-col
         >
       </el-row>
+      <el-tag style="margin-bottom: 20px" id="8">Node相关</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://docs.nestjs.cn/9/introduction')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>nestjs</strong>
+                </span>
+                <p class="overflowClip_2">nest中文文档</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
       <el-tag style="margin-bottom: 20px" id="12">图标库</el-tag>
       <el-row :gutter="20">
         <el-col
@@ -502,6 +565,28 @@
                 <p class="overflowClip_2">
                   Font Awesome is the world's most popular icon set and toolkit
                 </p>
+              </div>
+            </div>
+          </div></el-col
+        >
+      </el-row>
+      <el-tag style="margin-bottom: 20px" id="13">平台社区</el-tag>
+      <el-row :gutter="20">
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.coderutil.com/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>程序员盒子</strong>
+                </span>
+                <p class="overflowClip_2">程序员盒子</p>
               </div>
             </div>
           </div></el-col
@@ -1063,6 +1148,25 @@
             </div>
           </div></el-col
         >
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://tongyi.aliyun.com/qianwen/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>通义千问</strong>
+                </span>
+                <p class="overflowClip_2">阿里通义千问</p>
+              </div>
+            </div>
+          </div></el-col
+        >
       </el-row>
     </el-main>
   </el-container>
@@ -1188,7 +1292,7 @@ const handleMenuClick = () => {
       display: none;
     }
     .menu {
-      display: inline-flex!important;
+      display: inline-flex !important;
     }
   }
   .el-main {
