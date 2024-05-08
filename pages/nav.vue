@@ -14,7 +14,7 @@
           <img src="https://static.panrui.top/logo/rui.png" alt="logo" />
           <span>网址收藏</span>
         </div>
-        <div class="menu" @click="handleMenuClick">
+        <div class="menu" @click="handleMenuClick" style="display: none;">
           <el-button>菜单</el-button>
         </div>
       </header>
@@ -1186,6 +1186,9 @@ const handleMenuClick = () => {
     width: 100%;
     .el-menu {
       display: none;
+    }
+    .menu {
+      display: inline-flex!important;
     }
   }
   .el-main {
