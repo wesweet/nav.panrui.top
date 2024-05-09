@@ -675,6 +675,25 @@
             </div>
           </div></el-col
         >
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://butterfly.js.org/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>butterfly主题</strong>
+                </span>
+                <p class="overflowClip_2">butterfly主题大佬教程文档</p>
+              </div>
+            </div>
+          </div></el-col
+        >
       </el-row>
       <el-tag style="margin-bottom: 20px" id="16">常用工具</el-tag>
       <el-row :gutter="20">
