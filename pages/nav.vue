@@ -2,7 +2,7 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-05-08 15:50:46
+ * @LastEditTime: 2024-05-08 16:59:13
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
@@ -234,6 +234,25 @@
                   <strong>MDN_WEB_DOCS</strong>
                 </span>
                 <p class="overflowClip_2">MDN Web Docs 社区</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://hexo.io/zh-cn/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>hexo</strong>
+                </span>
+                <p class="overflowClip_2">快速、简洁且高效的博客框架</p>
               </div>
             </div>
           </div></el-col
@@ -633,6 +652,25 @@
                   <strong>网址收藏</strong>
                 </span>
                 <p class="overflowClip_2">大佬唐志远收藏的网址</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="10"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://www.fomal.cc/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>北落师门</strong>
+                </span>
+                <p class="overflowClip_2">北落师门的博客</p>
               </div>
             </div>
           </div></el-col
