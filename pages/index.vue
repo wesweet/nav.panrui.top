@@ -2,7 +2,7 @@
  * @Description: 首页
  * @Author: prui
  * @Date: 2024-05-06 15:04:11
- * @LastEditTime: 2024-05-06 15:47:48
+ * @LastEditTime: 2024-05-11 11:18:46
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
@@ -830,25 +830,6 @@
                   <strong>搜图神器</strong>
                 </span>
                 <p class="overflowClip_2">在线图片网站</p>
-              </div>
-            </div>
-          </div></el-col
-        >
-        <el-col
-          :xs="24"
-          :sm="6"
-          :md="10"
-          :lg="6"
-          :xl="6"
-          @click="openWindow('https://old.wwei.cn/qrcode-yasuo.html')"
-          ><div class="grid-content bg-purple-dark">
-            <div class="content">
-              <a></a>
-              <div class="box">
-                <span>
-                  <strong>微微二维码</strong>
-                </span>
-                <p class="overflowClip_2">图片在线压缩工具</p>
               </div>
             </div>
           </div></el-col
