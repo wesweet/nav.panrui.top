@@ -123,7 +123,7 @@
           :md="4"
           :lg="6"
           :xl="6"
-          @click="openWindow('https://panrui.top/')"
+          @click="openWindow('https://blog.panrui.top/')"
           ><div class="grid-content bg-purple-dark">
             <div class="content">
               <div class="img">
@@ -150,9 +150,28 @@
               <a></a>
               <div class="box">
                 <span>
-                  <strong>ChatGPT</strong>
+                  <strong>ChatGPT3.5</strong>
                 </span>
-                <p class="overflowClip_2">交互式代码解决方案网站</p>
+                <p class="overflowClip_2">ChatGPT3.5体验网站</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://chat4.panrui.top/')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>ChatGPT4.0</strong>
+                </span>
+                <p class="overflowClip_2">ChatGPT4.0体验网站</p>
               </div>
             </div>
           </div></el-col
