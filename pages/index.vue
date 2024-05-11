@@ -11,7 +11,7 @@
     <el-aside width="280px" style="background-color: #2c2e2f">
       <header class="logo-nav">
         <div class="logo">
-          <img src="https://static.panrui.top/logo/rui.png" alt="logo" />
+          <img src="https://static.panrui.top/logo/logo.png" alt="logo" />
           <span>网址收藏</span>
         </div>
         <div class="menu" @click="handleMenuClick" style="display: none">
@@ -127,7 +127,7 @@
           ><div class="grid-content bg-purple-dark">
             <div class="content">
               <div class="img">
-                <img src="https://static.panrui.top/logo/rui.png" />
+                <img src="https://static.panrui.top/logo/logo.png" />
               </div>
               <div class="box">
                 <span>
