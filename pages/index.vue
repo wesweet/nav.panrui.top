@@ -2,7 +2,7 @@
  * @Description: 首页
  * @Author: prui
  * @Date: 2024-05-06 15:04:11
- * @LastEditTime: 2024-05-11 11:18:46
+ * @LastEditTime: 2024-05-11 13:11:51
  * @LastEditors: prui
  * 不忘初心,不负梦想
 -->
@@ -210,6 +210,25 @@
                   <strong>唯一</strong>
                 </span>
                 <p class="overflowClip_2">唯一App应用H5版本</p>
+              </div>
+            </div>
+          </div></el-col
+        >
+        <el-col
+          :xs="24"
+          :sm="6"
+          :md="4"
+          :lg="6"
+          :xl="6"
+          @click="openWindow('https://github.com/wesweet')"
+          ><div class="grid-content bg-purple-dark">
+            <div class="content">
+              <a></a>
+              <div class="box">
+                <span>
+                  <strong>github</strong>
+                </span>
+                <p class="overflowClip_2">github主页</p>
               </div>
             </div>
           </div></el-col
