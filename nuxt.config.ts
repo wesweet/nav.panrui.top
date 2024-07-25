@@ -12,6 +12,11 @@ export default defineNuxtConfig({
     ["@vant/nuxt", { vant: {} }],
     ["nuxt-icon", {}],
   ],
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.BASE_URL || "http://localhost:3000",
+    },
+  },
   devtools: { enabled: true },
   css: ["~/assets/less/global.less"],
   app: {

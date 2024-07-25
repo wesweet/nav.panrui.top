@@ -2,13 +2,13 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-05-09 21:20:37
- * @LastEditors: prui
+ * @LastEditTime: 2024-07-25 23:49:46
+ * @LastEditors: panrui 1547177202@qq.com
  * 不忘初心,不负梦想
 -->
 <template>
   <el-container class="container">
-    <el-aside width="280px" style="background-color: #2c2e2f">
+    <!-- <el-aside width="280px" style="background-color: #2c2e2f">
       <header class="logo-nav">
         <div class="logo">
           <img src="https://static.panrui.top/logo/rui.png" alt="logo" />
@@ -1320,37 +1320,37 @@
           </div></el-col
         >
       </el-row>
-    </el-main>
+    </el-main> -->
   </el-container>
 </template>
 
 <script lang="ts" setup>
-// 创建openWindow方法
-const openWindow = (url: string) => {
-  if (url) {
-    window.open(url, "_blank");
-  }
-};
-const handleMenuItemClick = (command: string) => {
-  scrollToSection(command);
-};
-const scrollToSection = (sectionId: string) => {
-  const element = document.getElementById(sectionId);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
-const handleMenuClick = () => {
-  const menu: HTMLElement | null = document.getElementById("menu");
-  // 判断菜单是否显示
-  if (menu) {
-    if (menu.style.display == "none" || menu.style.display == "") {
-      menu.style.display = "block";
-    } else {
-      menu.style.display = "none";
-    }
-  }
-};
+// // 创建openWindow方法
+// const openWindow = (url: string) => {
+//   if (url) {
+//     window.open(url, "_blank");
+//   }
+// };
+// const handleMenuItemClick = (command: string) => {
+//   scrollToSection(command);
+// };
+// const scrollToSection = (sectionId: string) => {
+//   const element = document.getElementById(sectionId);
+//   if (element) {
+//     element.scrollIntoView({ behavior: "smooth" });
+//   }
+// };
+// const handleMenuClick = () => {
+//   const menu: HTMLElement | null = document.getElementById("menu");
+//   // 判断菜单是否显示
+//   if (menu) {
+//     if (menu.style.display == "none" || menu.style.display == "") {
+//       menu.style.display = "block";
+//     } else {
+//       menu.style.display = "none";
+//     }
+//   }
+// };
 </script>
 
 <style lang="less" scoped>
@@ -1379,8 +1379,8 @@ const handleMenuClick = () => {
   }
   .el-menu-demo {
     border-bottom: none;
-    .el-menu-item {
-    }
+    // .el-menu-item {
+    // }
   }
   .grid-content {
     height: 90px;
