@@ -95,7 +95,12 @@ interface ResponseData {
 }
 // 使用 useAsyncData 获取数据
 const { data: websiteList, error } = useAsyncData<ResponseData>("getList", () =>
-  $fetch("https://work.panrui.top:8443/app/website")
+  $fetch("https://work.panrui.top:8443/app/website", {
+    query: {
+      page: 1,
+      limit: 999
+    },
+  })
 );
 
 // 处理错误
