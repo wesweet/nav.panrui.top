@@ -2,8 +2,8 @@
  * @Description: 收藏网址
  * @Author: prui
  * @Date: 2024-05-06 15:46:45
- * @LastEditTime: 2024-07-25 23:49:46
- * @LastEditors: panrui 1547177202@qq.com
+ * @LastEditTime: 2024-08-21 13:51:30
+ * @LastEditors: panr99 1547177202@qq.com
  * 不忘初心,不负梦想
 -->
 <template>
@@ -104,46 +104,6 @@
           :md="4"
           :lg="6"
           :xl="6"
-          @click="openWindow('https://docsify.panrui.top/#/')"
-          ><div class="grid-content bg-purple-dark">
-            <div class="content">
-              <a></a>
-              <div class="box">
-                <span>
-                  <strong>神奇文档</strong>
-                </span>
-                <p class="overflowClip_2">一个神奇的文档网站。</p>
-              </div>
-            </div>
-          </div></el-col
-        >
-        <el-col
-          :xs="24"
-          :sm="6"
-          :md="4"
-          :lg="6"
-          :xl="6"
-          @click="openWindow('https://blog.panrui.top/')"
-          ><div class="grid-content bg-purple-dark">
-            <div class="content">
-              <div class="img">
-                <img src="https://static.panrui.top/logo/rui.png" />
-              </div>
-              <div class="box">
-                <span>
-                  <strong>个人博客</strong>
-                </span>
-                <p class="overflowClip_2">不忘初心，不负梦想</p>
-              </div>
-            </div>
-          </div></el-col
-        >
-        <el-col
-          :xs="24"
-          :sm="6"
-          :md="4"
-          :lg="6"
-          :xl="6"
           @click="openWindow('https://chat.panrui.top/')"
           ><div class="grid-content bg-purple-dark">
             <div class="content">
@@ -210,68 +170,6 @@
                   <strong>唯一</strong>
                 </span>
                 <p class="overflowClip_2">唯一App应用H5版本</p>
-              </div>
-            </div>
-          </div></el-col
-        >
-      </el-row>
-      <el-tag style="margin-bottom: 20px" id="2">前端常用</el-tag>
-      <el-row :gutter="20">
-        <el-col
-          :xs="24"
-          :sm="6"
-          :md="4"
-          :lg="6"
-          :xl="6"
-          @click="openWindow('https://www.bootcdn.cn/')"
-          ><div class="grid-content bg-purple-dark">
-            <div class="content">
-              <a></a>
-              <div class="box">
-                <span>
-                  <strong>bootcdn</strong>
-                </span>
-                <p class="overflowClip_2">
-                  稳定、快速、免费的前端开源项目 CDN 加速服务
-                </p>
-              </div>
-            </div>
-          </div></el-col
-        >
-        <el-col
-          :xs="24"
-          :sm="6"
-          :md="4"
-          :lg="6"
-          :xl="6"
-          @click="openWindow('https://developer.mozilla.org/zh-CN/docs/Web')"
-          ><div class="grid-content bg-purple-dark">
-            <div class="content">
-              <a></a>
-              <div class="box">
-                <span>
-                  <strong>MDN_WEB_DOCS</strong>
-                </span>
-                <p class="overflowClip_2">MDN Web Docs 社区</p>
-              </div>
-            </div>
-          </div></el-col
-        >
-        <el-col
-          :xs="24"
-          :sm="6"
-          :md="4"
-          :lg="6"
-          :xl="6"
-          @click="openWindow('https://hexo.io/zh-cn/')"
-          ><div class="grid-content bg-purple-dark">
-            <div class="content">
-              <a></a>
-              <div class="box">
-                <span>
-                  <strong>hexo</strong>
-                </span>
-                <p class="overflowClip_2">快速、简洁且高效的博客框架</p>
               </div>
             </div>
           </div></el-col
